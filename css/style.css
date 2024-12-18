@@ -1,0 +1,561 @@
+@import url("../css/fonts.css");
+@import url("../css/reset.css");
+@import url("../css/global.css");
+
+@import url("../css/header.css");
+@import url("../css/main.css");
+@import url("../css/footer.css");
+
+
+@media (max-width: 1440px) {  
+}
+
+@media (max-width: 1250px) {
+    .consultation__title {
+        font-size: 46px;
+    }
+    .consultation__descr {
+        font-size: 16px;
+    }
+    .consultation__form::after {
+        left: 33%;
+    }
+
+    .consultation__accordion-header {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .consultation__inner {
+        flex-direction: column;
+    }
+
+    .consultation__block {
+        max-width: 100%;
+    }
+
+    .consultation__accordion__block {
+        max-width: 100%;
+    }
+    .consultation__accordion {
+        max-width: 100%;
+    }
+    .consultation__form::after {
+        left: 61%;
+    }
+
+    .brends__title {
+        font-size: 14px;
+    }
+    .brends__subtitle {
+        font-size: 26px;
+    }
+    .brends__descr {
+        font-size: 14px;
+    }
+    .brends__swiper-button-next {
+        left: 25%;
+    }
+    .brends__swiper-button-prev {
+        left: -10%;
+    }
+
+    .shop__item-title {
+        font-size: 36px;
+    }
+
+    .shop__item-descr{
+        font-size: 16px;
+    }
+
+    .footer__menu {
+        gap: 70px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .brends__swiper-button-next {
+        left: 29%;
+    }
+    .brends__swiper-button-prev {
+        left: -12%;
+    }
+
+    /* .footer__item:not(:last-child) {
+        margin-right: 38px;
+    } */
+}
+
+
+@media (max-width: 992px) {
+    .header__nav {
+        display: none;
+    }
+    .burger-icon {
+        display: flex;
+    }
+    .consultation__form::after {
+        left: 53%;
+    }
+    .brend__inner {
+        flex-direction: column;
+    }
+
+    .brends__swiper {
+        max-width: unset;
+    }
+
+    .brends__images {
+        width: 100%;
+    }
+    .brends__swiper-button-next {
+        left: 14.5%;
+    }
+    .brends__swiper-button-prev {
+        left: -6.1%;
+    }
+    .services__accordion__inner.active .services__accordion__content {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .services__accordion__content .services__accordion__item {
+        width: 100%;
+    }
+
+
+    .services__accordion__item .services__accordion__item-buttons a {
+        max-width: 100%;
+    }
+
+    .shop__inner {
+        justify-content: center;
+    }
+
+    .shop__item-title {
+        margin: 55px 35px 5px 35px;
+        text-align: center;
+    }
+
+    .shop__item-descr {
+        margin: 0px 44px 60px 60px;
+        text-align: center;
+    }
+    
+    .shop__item-button {
+        margin: 60px 30px 60px 30px;
+        max-width: 100%;
+    }
+
+    .footer__block {
+        flex-direction: column;
+    }
+
+
+    .footer__block-social {
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .footer__logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__contact {
+        align-items: center;
+    }
+
+    .footer__block-social {
+        justify-content: center;
+    }
+
+    .footer__button {
+        width: 100%;
+    }
+
+    .footer__button::after{
+        display: none;
+    }
+
+    .footer__block-left {
+        border-right: none;
+    }
+    .footer__menu {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: 0;
+    }
+
+    .footer__privacy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__map {
+        margin-bottom: 40px;
+        max-width: 100%;
+    }
+
+    .footer__block-left {
+        padding-right: 0;
+    }
+
+    .footer__map {
+        margin-left: 0;
+    }
+
+    .footer__info br {
+        display: none;
+    }
+
+    .footer__info {
+        text-align: center;
+    }
+
+    .footer__item:not(:last-child) {
+        margin-right: 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .consultation__form::after {
+        left: 32%;
+    }
+    .consultation__title {
+        font-size: 36px;
+    }
+    .consultation__descr {
+        font-size: 18px;
+    }
+    .brends__swiper-button-next {
+        left: 19%;
+    }
+    .brends__swiper-button-prev {
+        left: -8.1%;
+    }
+
+
+
+    .maintenance__grid {
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: auto; 
+        gap: 20px; 
+    }
+
+    .item-1 {
+        grid-column: 1 / 3; 
+        grid-row: 1 / 2; 
+        max-width: 100%; 
+        height: 240px;
+    }
+
+    .item-1 img{
+        max-width: 50%;
+        position: absolute; 
+        top: 60%;
+        left: 71%;
+        transform: translate(-15%, -50%); 
+    }
+
+    .item-2 {
+        grid-column: 1 / 2; 
+        grid-row: 2 / 3; 
+        max-width: 100%;
+    }
+
+    .item-3 {
+        grid-column: 2 / 3; 
+        grid-row: 2 / 3; 
+        max-width: 100%;
+    }
+
+    .item-4 {
+        grid-column: 1 / 2; 
+        grid-row: 3 / 4; 
+        max-width: 100%;
+    }
+
+    .item-5 {
+        grid-column: 2 / 3; 
+        grid-row: 3 / 4; 
+        max-width: 100%;
+    }
+
+        .item-2 img,
+        .item-3 img,
+        .item-4 img,
+        .item-5 img {
+        position: absolute; 
+        top: 15%;
+        left: 35%;
+    }
+
+
+    .services__title {
+        text-align: center;
+    }
+
+    .question__accordion {
+        align-items: center;
+    }
+
+    .question__accordion__item-title {
+        font-size: 20px;
+    }
+
+
+    .question-forms-block {
+        flex-direction: column;
+    }
+
+
+    .question-forms-left {
+        width: 100%;
+    }
+
+    .question-forms-right__img {
+        height: auto;
+    }
+
+    .consultation__img {
+        top: 8%;
+        left: 31%;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 5px;
+    }
+
+    .header__inner {
+        gap: 45px;
+    }
+
+    .header__link {
+        font-size: 0;
+        width: 48px;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .header__link::before {
+        margin: 0;
+    }
+    .header__contact-block {
+        max-width: 360px;
+    }
+
+    .consultation__form::after {
+        width: 342px;
+        height: 342px;
+    }
+    .consultation__title {
+        font-size: 28px;
+    }
+    .consultation__form::after {
+        left: 50%;
+        top: 15%;
+    }
+
+    .consultation__form {
+        position: relative;
+        z-index: 2;
+        padding: 40px 40px 40px 10px;
+    }
+
+    .consultation__descr {
+        margin-bottom: 156px;
+    }
+
+    form div {
+        margin-bottom: 4px;
+    }
+
+    form input[type="text"], form textarea, form select {
+        width: 105%;
+    }
+
+    form button[type="submit"] {
+        width: 105%;
+    }
+    .consultation__form::before {
+        top: 25%;
+    }
+
+    .consultation__btn-more {
+        width: 100%;
+    }
+
+    .brends__swiper-button-next {
+        left: 25%;
+    }
+    .brends__swiper-button-prev {
+        left: -11%;
+    }
+
+    .maintenance__title {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .question__subtitle {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .question__accordion__item {
+        padding: 10px;
+    }
+
+    .question-contact-form-title {
+        font-size: 25px;
+    }
+
+    .question-contact-descr {
+        font-size: 14px;
+    }
+
+    .agreement {
+        font-size: 12px;
+    }
+
+    .contact-options p {
+        font-size: 14px;
+    }
+
+    .btn-submit {
+        margin-bottom: 20px;
+    }
+  }
+
+
+
+
+
+
+
+  @media (max-width: 495px) {
+    .burger-menu__nav {
+        width: 365px;
+    }
+    .brends__swiper-button-next {
+        left: 29%;
+    }
+    .brends__swiper-button-prev {
+        left: -12%;
+    }
+
+    .maintenance__grid {
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto; 
+        gap: 20px; 
+    }
+
+    .item-1, .item-2, .item-3, .item-4, .item-5 {
+        grid-column: 1 / 2; 
+        grid-row: auto; 
+    }
+
+    .item-2 img,
+    .item-3 img,
+    .item-4 img,
+    .item-5 img {
+    position: absolute; 
+    top: 15%;
+    left: 60%;
+    }
+
+    .services__accordion__inner {
+        padding: 0px 25px;
+    }
+
+    .question__accordion__item-title {
+        font-size: 18px;
+    }
+
+    .footer__contact {
+        align-items: start;
+    }
+
+    .footer__block-social {
+        justify-content: start;
+    }
+
+    .footer__link {
+        font-size: 14px;
+    }
+
+    .footer__menu {
+        justify-content: flex-start;
+    }
+
+    .popup-title {
+        font-size: 20px;
+    }
+
+    .popup-descr{
+        font-size: 14px;
+    }
+    .unique-popup-form {
+        gap: 5px;
+    }
+}
+
+
+
+@media (max-width: 420px) {
+    .consultation__img {
+        top: 25%;
+    }
+}
+
+
+
+
+
+  @media (max-width: 380px) {
+    form input[type="text"], form textarea, form select {
+        width: 110%;
+    }
+
+    form button[type="submit"] {
+        width: 110%;
+    }
+
+    .consultation__form::after {
+        left: 30%;
+        top: 23%;
+    }
+
+    .consultation__form::before {
+        top: 30%;
+    }
+
+    .brends__slider-nav {
+        transform: translate(116px, -90px);
+        flex-direction: column;
+        gap: 5px;
+        align-items: unset;
+    }
+    .brends__swiper-info {
+        align-self: unset;
+        margin: 10px 0px 0px 45px ;
+    }
+    .brends__swiper-button-next {
+        left: 38%;
+    }
+    .brends__swiper-button-prev {
+        left: -16%;
+    }
+}

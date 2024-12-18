@@ -1,0 +1,1551 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./css/style.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<title>Главная</title>
+</head>
+
+<body class="body">
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<div class="header__inner-left">
+						<div class="header__logotype">
+							<img src="./images/header_img/header_logo.svg" alt="Логотип компании" />
+						</div>
+						<div class="header__nav">
+							<ul class="header__nav-list">
+								<li class="header__nav-item dropdown">
+									<a data-toggle="dropdown" href="#" class="header__nav-link dropdown__toggle">Ремонт
+										форсунок</a>
+									<ul class="dropdown__menu">
+										<li class="dropdown__list">
+											<a href="#" class="dropdown__link">Common Rail</a>
+										</li>
+										<li class="dropdown__list">
+											<a href="#" class="dropdown__link">Насос форсунки</a>
+										</li>
+										<li class="dropdown__list">
+											<a href="#" class="dropdown__link">Пьезо форсунки</a>
+										</li>
+										<li class="dropdown__list">
+											<a href="#" class="dropdown__link">PLD Секции</a>
+										</li>
+										<li class="dropdown__list">
+											<a href="#" class="dropdown__link">Механические</a>
+										</li>
+									</ul>
+								</li>
+								<li class="header__nav-item dropdown">
+									<a data-toggle="dropdown" href="#" class="header__nav-link dropdown__toggle">Ремонт
+										ТНВД</a>
+									<ul class="dropdown__menu">
+										<li class="dropdown__list">
+											<a href="#" class="dropdown__link">Насос форсунки</a>
+										</li>
+										<li>
+											<a href="#" class="dropdown__link">Common Rail</a>
+										</li>
+										<li>
+											<a href="#" class="dropdown__link">Пьезо форсунки</a>
+										</li>
+									</ul>
+								</li>
+								<li class="header__nav-item">
+									<a href="#" class="header__nav-link">Диагностика</a>
+								</li>
+								<li class="header__nav-item">
+									<a href="#" class="header__nav-link">Диагностика авто</a>
+								</li>
+								<li class="header__nav-item">
+									<a href="#" class="header__nav-link">Ремонт турбин</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="header__inner-right">
+						<a href="#" class="header__link">Контакты</a>
+						<div class="header__contact-block hidden">
+							<div class="header__contact-info">
+								<div class="header__contact-item">
+									<span class="header__label">Телефон</span>
+									<a href="tel:+78126047077" class="header__value phone">+7 (812) 604-70-77</a>
+								</div>
+								<div class="header__contact-item">
+									<span class="header__label">Почта</span>
+									<a href="mailto:info@dieselspot.ru"
+										class="header__value email">info@dieselspot.ru</a>
+								</div>
+								<div class="header__contact-item">
+									<span class="header__label">Адрес</span>
+									<p class="header__value address">
+										Санкт-Петербург, Мебельный проезд д.2<br />
+										(станции метро Старая деревня, Комендантский
+										проспект, Беговая)
+									</p>
+								</div>
+								<div class="header__contact-item">
+									<span class="header__label">Режим работы</span>
+									<p class="header__value working-hours">
+										Пн-Пт: с 9:00 до 18:00
+									</p>
+								</div>
+							</div>
+
+							<div class="social-links">
+								<a href="tel:+78126047077" class="icon phone-icon" aria-label="Позвонить">
+									<img src="./images/header_img/header_social_icon_phone.svg" alt="Phone" />
+								</a>
+								<a href="mailto:info@dieselspot.ru" class="icon email-icon"
+									aria-label="Написать на почту">
+									<img src="./images/header_img/header_social_icon_mail.svg" alt="Mail" />
+								</a>
+								<a href="https://wa.me/+79522883587" class="icon whatsapp-icon" aria-label="WhatsApp">
+									<img src="./images/header_img/header_social_icon_whatsapp.svg" alt="WhatsApp" />
+								</a>
+								<a href="https://vk.com/your-profile" class="icon vk-icon" aria-label="ВКонтакте">
+									<img src="./images/header_img/header_social_icon_vk.svg" alt="VK" />
+								</a>
+								<a href="https://instagram.com/your-profile" class="icon instagram-icon"
+									aria-label="Instagram">
+									<img src="./images/header_img/header_social_icon_instagram.svg" alt="Instagram" />
+								</a>
+								<a href="https://avito.ru/your-profile" class="icon avito-icon" aria-label="Avito">
+									<img src="./images/header_img/header_social_icon_avito.svg" alt="Avito" />
+								</a>
+							</div>
+
+							<div class="callback-button">
+								<button type="button" class="callback-btn trigger-custom-popup">
+									Обратный звонок
+								</button>
+							</div>
+						</div>
+						<div class="hidden-overlay"></div>
+						<div class="burger-menu">
+							<a class="burger-icon" href="#">
+								<span></span>
+							</a>
+							<div class="burger-menu__nav">
+								<ul class="burger-menu__list">
+									<li class="burger-menu__item">
+										<div class="burger-menu__item-flex">
+											<a id="burger-toggle-1" href="#" class="burger-menu__link">
+												Ремонт форсунок
+											</a>
+											<div class="burger-menu__item-flex-icon">
+												<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path d="M1.5 14.5L14.5 1.5M14.5 1.5V13.98M14.5 1.5H2.02"
+														stroke="white" stroke-width="1.5" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</div>
+										</div>
+										<ul class="burger-menu-dropdown__list">
+											<li class="burger-menu__dropdown-item">
+												<a href="#" class="burger-menu__dropdown-link">Common Rail</a>
+											</li>
+											<li class="burger-menu__dropdown-item">
+												<a href="#" class="burger-menu__dropdown-link">Насос форсунки</a>
+											</li>
+											<li class="burger-menu__dropdown-item">
+												<a href="#" class="burger-menu__dropdown-link">Пьезо форсунки</a>
+											</li>
+											<li class="burger-menu__dropdown-item">
+												<a href="#" class="burger-menu__dropdown-link">PLD Секции</a>
+											</li>
+											<li class="burger-menu__dropdown-item">
+												<a href="#" class="burger-menu__dropdown-link">Механические</a>
+											</li>
+										</ul>
+									</li>
+									<li class="burger-menu__item">
+										<div class="burger-menu__item-flex">
+											<a id="burger-toggle-2" href="#" class="burger-menu__link">
+												Ремонт ТНВД
+											</a>
+											<div class="burger-menu__item-flex-icon">
+												<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path d="M1.5 14.5L14.5 1.5M14.5 1.5V13.98M14.5 1.5H2.02"
+														stroke="white" stroke-width="1.5" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</div>
+										</div>
+										<ul class="burger-menu-dropdown__list">
+											<li class="burger-menu-dropdown__item">
+												<a href="#" class="burger-menu-dropdown__link">Насос форсунки</a>
+											</li>
+											<li class="burger-menu-dropdown__item">
+												<a href="#" class="burger-menu-dropdown__link">Common Rail</a>
+											</li>
+											<li class="burger-menu-dropdown__item">
+												<a href="#" class="burger-menu-dropdown__link">Пьезо форсунки</a>
+											</li>
+										</ul>
+									</li>
+									<li class="burger-menu__item">
+										<div class="burger-menu__item-flex">
+											<a href="#" class="burger-menu__link">Диагностика</a>
+											<div class="burger-menu__item-flex-icon">
+												<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path d="M1.5 14.5L14.5 1.5M14.5 1.5V13.98M14.5 1.5H2.02"
+														stroke="white" stroke-width="1.5" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</div>
+										</div>
+									</li>
+									<li class="burger-menu__item">
+										<div class="burger-menu__item-flex">
+											<a href="#" class="burger-menu__link">Диагностика авто</a>
+											<div class="burger-menu__item-flex-icon">
+												<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path d="M1.5 14.5L14.5 1.5M14.5 1.5V13.98M14.5 1.5H2.02"
+														stroke="white" stroke-width="1.5" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</div>
+										</div>
+									</li>
+									<li class="burger-menu__item">
+										<div class="burger-menu__item-flex">
+											<a href="#" class="burger-menu__link">Ремонт турбин</a>
+											<div class="burger-menu__item-flex-icon">
+												<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path d="M1.5 14.5L14.5 1.5M14.5 1.5V13.98M14.5 1.5H2.02"
+														stroke="white" stroke-width="1.5" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<section class="consultation">
+				<div class="container">
+					<div class="consultation__inner">
+						<div class="consultation__block">
+							<div class="consultation__form">
+								<h1 class="consultation__title">
+									Автосервис по ремонту дизельных автомобилей
+								</h1>
+								<p class="consultation__descr">
+									Поберегите нервы, посетив хороший автосервис.
+									<br />
+									Для быстрой записи заполните форму:
+								</p>
+								<div class="consultation__details">
+									<form action="your-action-url" method="post">
+										<div class="consultation__details-form">
+											<input type="text" id="name" name="name" placeholder="Ваше имя" required />
+										</div>
+										<div class="consultation__details-form">
+											<select id="contact-method" name="contact_method" required>
+												<option value="" disabled selected>
+													Выберите способ связи
+												</option>
+												<option value="method1">
+													Вариант 1
+												</option>
+												<option value="method2">
+													Вариант 2
+												</option>
+											</select>
+										</div>
+										<div class="consultation__details-form">
+											<input type="text" id="phone-nickname" name="phone_nickname"
+												placeholder="Ваш телефон / Ваш никнейм" required />
+										</div>
+										<div class="consultation__details-form">
+											<textarea id="comment" name="comment"
+												placeholder="Ваш комментарий (по желанию)"></textarea>
+										</div>
+										<div class="consultation__details-form">
+											<button type="submit">
+												Получить консультацию
+											</button>
+										</div>
+									</form>
+								</div>
+								<div class="consultation__images">
+									<img class="consultation__img"
+										src="./images/main_img/consultation_img/consultation_img_bg.png" alt="Мастер">
+								</div>
+							</div>
+						</div>
+						<div class="consultation__accordion__block">
+							<div class="consultation__accordion__inner">
+								<div class="consultation__accordion">
+									<div class="consultation__accordion-item">
+										<h3 class="consultation__accordion-header">
+											Ремонт форсунок
+											<div class="consultation__accordion-toggle">
+												<svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path d="M1.5 14L14.5 1M14.5 1V13.48M14.5 1H2.02" stroke="white"
+														stroke-width="1.5" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</div>
+										</h3>
+										<div class="consultation__accordion-content">
+											<p>
+												Плохо заводится двигатель? Пропала тяга
+												или двигатель троит? Появилась дымность
+												или посторонние звуки из мотора? Вам
+												просто нужно пройти ТО?
+											</p>
+											<p>
+												<strong>Мы знаем все про ремонт дизельных
+													двигателей и топливных систем.</strong>
+											</p>
+											<button class="consultation__btn-more">
+												Подробнее
+											</button>
+										</div>
+									</div>
+									<div class="consultation__accordion-item">
+										<h3 class="consultation__accordion-header">
+											Ремонт ТНВД
+											<div class="consultation__accordion-toggle">
+												<svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path d="M1.5 14L14.5 1M14.5 1V13.48M14.5 1H2.02" stroke="white"
+														stroke-width="1.5" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</div>
+										</h3>
+										<div class="consultation__accordion-content">
+											<p>
+												Плохо заводится двигатель? Пропала тяга
+												или двигатель троит? Появилась дымность
+												или посторонние звуки из мотора? Вам
+												просто нужно пройти ТО?
+											</p>
+											<p>
+												<strong>Мы знаем все про ремонт дизельных
+													двигателей и топливных систем.</strong>
+											</p>
+											<button class="consultation__btn-more">
+												Подробнее
+											</button>
+										</div>
+									</div>
+									<div class="consultation__accordion-item">
+										<h3 class="consultation__accordion-header">
+											Диагностика
+											<div class="consultation__accordion-toggle">
+												<svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path d="M1.5 14L14.5 1M14.5 1V13.48M14.5 1H2.02" stroke="white"
+														stroke-width="1.5" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</div>
+										</h3>
+										<div class="consultation__accordion-content">
+											<p>
+												Плохо заводится двигатель? Пропала тяга
+												или двигатель троит? Появилась дымность
+												или посторонние звуки из мотора? Вам
+												просто нужно пройти ТО?
+											</p>
+											<p>
+												<strong>Мы знаем все про ремонт дизельных
+													двигателей и топливных систем.</strong>
+											</p>
+											<button class="consultation__btn-more">
+												Подробнее
+											</button>
+										</div>
+									</div>
+									<div class="consultation__accordion-item">
+										<h3 class="consultation__accordion-header">
+											Диагностика авто
+											<div class="consultation__accordion-toggle">
+												<svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path d="M1.5 14L14.5 1M14.5 1V13.48M14.5 1H2.02" stroke="white"
+														stroke-width="1.5" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</div>
+										</h3>
+										<div class="consultation__accordion-content">
+											<p>
+												Плохо заводится двигатель? Пропала тяга
+												или двигатель троит? Появилась дымность
+												или посторонние звуки из мотора? Вам
+												просто нужно пройти ТО?
+											</p>
+											<p>
+												<strong>Мы знаем все про ремонт дизельных
+													двигателей и топливных систем.</strong>
+											</p>
+											<button class="consultation__btn-more">
+												Подробнее
+											</button>
+										</div>
+									</div>
+									<div class="consultation__accordion-item">
+										<h3 class="consultation__accordion-header">
+											Ремонт турбин
+											<div class="consultation__accordion-toggle">
+												<svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path d="M1.5 14L14.5 1M14.5 1V13.48M14.5 1H2.02" stroke="white"
+														stroke-width="1.5" stroke-linecap="round"
+														stroke-linejoin="round" />
+												</svg>
+											</div>
+										</h3>
+										<div class="consultation__accordion-content">
+											<p>
+												Плохо заводится двигатель? Пропала тяга
+												или двигатель троит? Появилась дымность
+												или посторонние звуки из мотора? Вам
+												просто нужно пройти ТО?
+											</p>
+											<p>
+												<strong>Мы знаем все про ремонт дизельных
+													двигателей и топливных систем.</strong>
+											</p>
+											<button class="consultation__btn-more">
+												Подробнее
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="brends">
+				<div class="container">
+					<div class="brend__inner">
+						<div class="brends__slider">
+							<div class="brends__swiper">
+								<!-- Additional required wrapper -->
+								<div class="brends__wrapper swiper-wrapper">
+									<!-- Slides -->
+									<div class="brends__slide swiper-slide">
+										<h5 class="brends__title">Бренды</h5>
+										<h3 class="brends__subtitle">
+											Знаем и работаем со всеми типами топливных
+											систем
+										</h3>
+										<div class="brends__brend">
+											<div class="brends__img">
+												<img src="./images/main_img/brends_img/brends_img_logo.png" alt="Bosch"
+													class="brends__logo" />
+											</div>
+											<div class="brends__name">Bosch</div>
+										</div>
+										<p class="brends__descr">
+											BOSCH - Немецкая группа компаний,
+											занимающаяся разработкой и производством
+											промышленного и бытового оборудования,
+											техники для автомобилей. Некоторое время
+											занималась производством
+											телекоммуникационного оборудования. Входит в
+											десятку крупнейших мировых производителей
+											электрического и электронного оборудования.
+										</p>
+									</div>
+									<div class="brends__slide swiper-slide">
+										<h5 class="brends__title">Бренды</h5>
+										<h3 class="brends__subtitle">
+											Знаем и работаем со всеми типами топливных
+											систем
+										</h3>
+										<div class="brends__brend">
+											<div class="brends__img">
+												<img src="./images/main_img/brends_img/brends_img_logo.png" alt="Bosch"
+													class="brends__logo" />
+											</div>
+											<div class="brends__name">Bosch</div>
+										</div>
+										<p class="brends__descr">
+											BOSCH - Немецкая группа компаний,
+											занимающаяся разработкой и производством
+											промышленного и бытового оборудования,
+											техники для автомобилей. Некоторое время
+											занималась производством
+											телекоммуникационного оборудования. Входит в
+											десятку крупнейших мировых производителей
+											электрического и электронного оборудования.
+										</p>
+									</div>
+									<div class="brends__slide swiper-slide">
+										<h5 class="brends__title">Бренды</h5>
+										<h3 class="brends__subtitle">
+											Знаем и работаем со всеми типами топливных
+											систем
+										</h3>
+										<div class="brends__brend">
+											<div class="brends__img">
+												<img src="./images/main_img/brends_img/brends_img_logo.png" alt="Bosch"
+													class="brends__logo" />
+											</div>
+											<div class="brends__name">Bosch</div>
+										</div>
+										<p class="brends__descr">
+											BOSCH - Немецкая группа компаний,
+											занимающаяся разработкой и производством
+											промышленного и бытового оборудования,
+											техники для автомобилей. Некоторое время
+											занималась производством
+											телекоммуникационного оборудования. Входит в
+											десятку крупнейших мировых производителей
+											электрического и электронного оборудования.
+										</p>
+									</div>
+									<div class="brends__slide swiper-slide">
+										<h5 class="brends__title">Бренды</h5>
+										<h3 class="brends__subtitle">
+											Знаем и работаем со всеми типами топливных
+											систем
+										</h3>
+										<div class="brends__brend">
+											<div class="brends__img">
+												<img src="./images/main_img/brends_img/brends_img_logo.png" alt="Bosch"
+													class="brends__logo" />
+											</div>
+											<div class="brends__name">Bosch</div>
+										</div>
+										<p class="brends__descr">
+											BOSCH - Немецкая группа компаний,
+											занимающаяся разработкой и производством
+											промышленного и бытового оборудования,
+											техники для автомобилей. Некоторое время
+											занималась производством
+											телекоммуникационного оборудования. Входит в
+											десятку крупнейших мировых производителей
+											электрического и электронного оборудования.
+										</p>
+									</div>
+									<div class="brends__slide swiper-slide">
+										<h5 class="brends__title">Бренды</h5>
+										<h3 class="brends__subtitle">
+											Знаем и работаем со всеми типами топливных
+											систем
+										</h3>
+										<div class="brends__brend">
+											<div class="brends__img">
+												<img src="./images/main_img/brends_img/brends_img_logo.png" alt="Bosch"
+													class="brends__logo" />
+											</div>
+											<div class="brends__name">Bosch</div>
+										</div>
+										<p class="brends__descr">
+											BOSCH - Немецкая группа компаний,
+											занимающаяся разработкой и производством
+											промышленного и бытового оборудования,
+											техники для автомобилей. Некоторое время
+											занималась производством
+											телекоммуникационного оборудования. Входит в
+											десятку крупнейших мировых производителей
+											электрического и электронного оборудования.
+										</p>
+									</div>
+									<div class="brends__slide swiper-slide">
+										<h5 class="brends__title">Бренды</h5>
+										<h3 class="brends__subtitle">
+											Знаем и работаем со всеми типами топливных
+											систем
+										</h3>
+										<div class="brends__brend">
+											<div class="brends__img">
+												<img src="./images/main_img/brends_img/brends_img_logo.png" alt="Bosch"
+													class="brends__logo" />
+											</div>
+											<div class="brends__name">Bosch</div>
+										</div>
+										<p class="brends__descr">
+											BOSCH - Немецкая группа компаний,
+											занимающаяся разработкой и производством
+											промышленного и бытового оборудования,
+											техники для автомобилей. Некоторое время
+											занималась производством
+											телекоммуникационного оборудования. Входит в
+											десятку крупнейших мировых производителей
+											электрического и электронного оборудования.
+										</p>
+									</div>
+								</div>
+								<div class="brends__slider-nav">
+									<div class="brends__slider-nav-buttons">
+										<div class="brends__swiper-pagination"></div>
+										<div class="brends__swiper-button-prev">
+											<svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M0.968238 7.74219L12.396 7.74219L5.55613 13.6797C5.44675 13.7754 5.51316 13.9531 5.65769 13.9531L7.38621 13.9531C7.46238 13.9531 7.53464 13.9258 7.59128 13.877L14.9721 7.47266C15.0397 7.41406 15.094 7.34162 15.1311 7.26024C15.1683 7.17885 15.1875 7.09044 15.1875 7.00098C15.1875 6.91151 15.1683 6.8231 15.1311 6.74172C15.094 6.66034 15.0397 6.58789 14.9721 6.5293L7.54832 0.0859368C7.51902 0.0605462 7.48386 0.0468743 7.44675 0.0468743L5.65964 0.0468742C5.51511 0.0468742 5.44871 0.226562 5.55808 0.320312L12.396 6.25781L0.968239 6.25781C0.882301 6.25781 0.811989 6.32812 0.811989 6.41406L0.811988 7.58594C0.811988 7.67187 0.882301 7.74219 0.968238 7.74219Z"
+													fill="white" />
+											</svg>
+										</div>
+										<div class="brends__swiper-button-next">
+											<svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M0.968238 7.74219L12.396 7.74219L5.55613 13.6797C5.44675 13.7754 5.51316 13.9531 5.65769 13.9531L7.38621 13.9531C7.46238 13.9531 7.53464 13.9258 7.59128 13.877L14.9721 7.47266C15.0397 7.41406 15.094 7.34162 15.1311 7.26024C15.1683 7.17885 15.1875 7.09044 15.1875 7.00098C15.1875 6.91151 15.1683 6.8231 15.1311 6.74172C15.094 6.66034 15.0397 6.58789 14.9721 6.5293L7.54832 0.0859368C7.51902 0.0605462 7.48386 0.0468743 7.44675 0.0468743L5.65964 0.0468742C5.51511 0.0468742 5.44871 0.226562 5.55808 0.320312L12.396 6.25781L0.968239 6.25781C0.882301 6.25781 0.811989 6.32812 0.811989 6.41406L0.811988 7.58594C0.811988 7.67187 0.882301 7.74219 0.968238 7.74219Z"
+													fill="white" />
+											</svg>
+										</div>
+									</div>
+									<div class="brends__swiper-info"></div>
+								</div>
+
+								<!-- If we need scrollbar -->
+								<div class="brends__swiper-scrollbar"></div>
+							</div>
+						</div>
+						<div class="brends__images">
+							<div class="brends__image">
+								<div class="brends__svg">
+									<svg width="600" height="116" viewBox="0 0 600 116" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<g opacity="0.1">
+											<path
+												d="M6.47268 16.2674H39.6719C51.1559 16.2674 60.2735 19.5734 67.0247 26.1854C73.7759 32.7278 77.1515 41.741 77.1515 53.225C77.1515 65.4746 73.8803 74.7662 67.3379 81.0998C60.8651 87.4334 51.5039 90.6002 39.2543 90.6002H6.47268V16.2674ZM28.8143 34.955V71.8082H37.7927C43.2911 71.8082 47.4323 70.2074 50.2163 67.0058C53.0699 63.8042 54.4967 59.3498 54.4967 53.6426C54.4967 47.4482 52.8263 42.785 49.4855 39.653C46.2143 36.521 41.5859 34.955 35.6003 34.955H28.8143ZM107.983 16.2674V30.6746H87.3117V16.2674H107.983ZM107.983 36.7298V90.6002H87.3117V36.7298H107.983ZM175.783 74.4182C174.183 80.1254 170.703 84.5102 165.343 87.5726C160.054 90.635 154.242 92.1662 147.909 92.1662C139.139 92.1662 131.866 89.6954 126.089 84.7538C120.312 79.8122 117.424 72.9914 117.424 64.2914C117.424 55.8698 120.208 48.9446 125.776 43.5158C131.413 38.087 138.547 35.3726 147.178 35.3726C156.226 35.3726 163.429 38.1914 168.789 43.829C174.217 49.4666 176.932 57.053 176.932 66.5882V68.1542H137.26C137.399 71.5646 138.373 74.2094 140.183 76.0886C142.062 77.9678 144.603 78.9074 147.804 78.9074C151.632 78.9074 154.521 77.411 156.469 74.4182H175.783ZM156.783 57.8186C156.226 51.6938 153.059 48.6314 147.282 48.6314C141.714 48.6314 138.408 51.6938 137.364 57.8186H156.783ZM235.592 52.4942H216.905C216.557 50.5454 215.861 49.223 214.817 48.527C213.773 47.831 212.033 47.483 209.597 47.483C205.838 47.483 203.959 48.5618 203.959 50.7194C203.959 51.485 204.238 52.181 204.794 52.8074C205.421 53.3642 206.326 53.8514 207.509 54.269C208.692 54.617 209.701 54.8954 210.536 55.1042C211.372 55.2434 212.45 55.4174 213.773 55.6262C215.095 55.7654 215.791 55.835 215.861 55.835C218.366 56.3222 220.42 56.7746 222.02 57.1922C223.691 57.5402 225.57 58.1666 227.658 59.0714C229.746 59.9762 231.416 60.9854 232.669 62.099C233.922 63.2126 234.966 64.709 235.801 66.5882C236.706 68.4674 237.158 70.625 237.158 73.061C237.158 78.977 234.757 83.6054 229.955 86.9462C225.152 90.287 218.506 91.9574 210.014 91.9574C192.823 91.9574 183.706 85.5194 182.662 72.6434H202.184C202.463 74.8706 203.228 76.5062 204.481 77.5502C205.804 78.5246 207.787 79.0118 210.432 79.0118C212.45 79.0118 214.016 78.629 215.13 77.8634C216.313 77.0978 216.905 76.0538 216.905 74.7314C216.905 73.409 216.348 72.4694 215.234 71.9126C214.121 71.3558 211.998 70.7294 208.866 70.0334C207.822 69.8246 206.987 69.6506 206.36 69.5114C199.261 67.9802 194.528 66.623 192.162 65.4398C186.594 62.7254 183.81 58.3058 183.81 52.181C183.81 46.6826 186.037 42.4718 190.492 39.5486C195.016 36.6254 201.523 35.1638 210.014 35.1638C217.322 35.1638 223.273 36.4514 227.867 39.0266C232.46 41.5322 235.036 46.0214 235.592 52.4942ZM301.492 74.4182C299.891 80.1254 296.411 84.5102 291.052 87.5726C285.762 90.635 279.95 92.1662 273.617 92.1662C264.847 92.1662 257.574 89.6954 251.797 84.7538C246.02 79.8122 243.132 72.9914 243.132 64.2914C243.132 55.8698 245.916 48.9446 251.484 43.5158C257.122 38.087 264.256 35.3726 272.886 35.3726C281.934 35.3726 289.138 38.1914 294.497 43.829C299.926 49.4666 302.64 57.053 302.64 66.5882V68.1542H262.968C263.107 71.5646 264.082 74.2094 265.891 76.0886C267.77 77.9678 270.311 78.9074 273.512 78.9074C277.34 78.9074 280.229 77.411 282.178 74.4182H301.492ZM282.491 57.8186C281.934 51.6938 278.767 48.6314 272.99 48.6314C267.422 48.6314 264.116 51.6938 263.072 57.8186H282.491ZM332.382 16.2674V90.6002H311.711V16.2674H332.382ZM428.926 38.1914H416.502C415.736 29.4914 410.342 25.1414 400.32 25.1414C395.866 25.1414 392.386 26.081 389.88 27.9602C387.374 29.7698 386.122 32.2754 386.122 35.477C386.122 38.4698 387.026 40.523 388.836 41.6366C390.715 42.7502 394.822 44.1074 401.155 45.7082C402.826 46.1954 404.113 46.5434 405.018 46.7522C413.3 48.8402 418.938 50.7194 421.931 52.3898C428.543 55.9394 431.849 61.4726 431.849 68.9894C431.849 72.2606 431.292 75.2186 430.178 77.8634C429.065 80.5082 427.568 82.7354 425.689 84.545C423.81 86.285 421.583 87.7466 419.008 88.9298C416.432 90.113 413.753 90.9482 410.969 91.4354C408.185 91.9922 405.296 92.2706 402.304 92.2706C392.977 92.2706 385.426 90.0434 379.649 85.589C373.872 81.1346 370.984 74.5922 370.984 65.9618H383.825C383.825 71.3906 385.6 75.4274 389.149 78.0722C392.699 80.6474 397.327 81.935 403.034 81.935C408.046 81.935 411.943 80.9258 414.727 78.9074C417.581 76.8194 419.008 73.931 419.008 70.2422C419.008 67.8758 418.242 65.9618 416.711 64.5002C415.249 62.969 413.648 61.8902 411.908 61.2638C410.168 60.6374 407.141 59.7674 402.826 58.6538C402.338 58.5146 401.956 58.4102 401.677 58.3406C392.42 55.9742 386.33 54.0254 383.407 52.4942C377.352 49.3622 374.116 44.525 373.698 37.9826C373.698 37.4954 373.698 37.0082 373.698 36.521C373.698 29.909 376.169 24.6542 381.11 20.7566C386.122 16.7894 392.803 14.8058 401.155 14.8058C409.229 14.8058 415.806 16.7198 420.887 20.5478C425.968 24.3758 428.647 30.257 428.926 38.1914ZM452.983 36.7298V43.9334C456.603 38.087 462.449 35.1638 470.523 35.1638C477.97 35.1638 483.921 37.7738 488.375 42.9938C492.829 48.2138 495.057 55.1738 495.057 63.8738C495.057 72.365 492.864 79.1858 488.479 84.3362C484.164 89.417 478.387 91.9574 471.149 91.9574C463.493 91.9574 457.647 89.1386 453.61 83.501V110.541H441.813V36.7298H452.983ZM468.121 44.7686C463.458 44.7686 459.804 46.439 457.159 49.7798C454.515 53.1206 453.192 57.749 453.192 63.665C453.192 69.5114 454.515 74.105 457.159 77.4458C459.874 80.7866 463.597 82.457 468.33 82.457C472.854 82.457 476.439 80.7866 479.083 77.4458C481.728 74.105 483.051 69.581 483.051 63.8738C483.051 58.0274 481.693 53.399 478.979 49.9886C476.334 46.5086 472.715 44.7686 468.121 44.7686ZM530.378 35.1638C538.591 35.1638 545.133 37.739 550.005 42.8894C554.877 48.0398 557.313 54.965 557.313 63.665C557.313 72.4346 554.877 79.3946 550.005 84.545C545.203 89.6954 538.66 92.2706 530.378 92.2706C521.956 92.2706 515.275 89.6954 510.333 84.545C505.392 79.3946 502.921 72.4346 502.921 63.665C502.921 54.965 505.392 48.0398 510.333 42.8894C515.344 37.739 522.026 35.1638 530.378 35.1638ZM541.236 49.6754C538.591 46.265 534.902 44.5598 530.169 44.5598C525.436 44.5598 521.713 46.265 518.998 49.6754C516.284 53.0858 514.927 57.749 514.927 63.665C514.927 69.7202 516.284 74.453 518.998 77.8634C521.713 81.2738 525.471 82.979 530.274 82.979C534.937 82.979 538.591 81.2738 541.236 77.8634C543.95 74.3834 545.307 69.6158 545.307 63.5606C545.307 57.6446 543.95 53.0162 541.236 49.6754ZM593.621 36.7298V45.395H582.763V73.7918C582.763 75.4622 582.798 76.6454 582.868 77.3414C582.937 77.9678 583.146 78.6986 583.494 79.5338C583.842 80.2994 584.434 80.8214 585.269 81.0998C586.174 81.3782 587.392 81.5174 588.923 81.5174C590.872 81.5174 592.438 81.4478 593.621 81.3086V90.7046C591.254 90.983 588.575 91.1222 585.582 91.1222C583.494 91.1222 581.65 90.9482 580.049 90.6002C578.518 90.3218 577.23 89.9738 576.186 89.5562C575.142 89.1386 574.272 88.4426 573.576 87.4682C572.88 86.4242 572.323 85.589 571.906 84.9626C571.558 84.2666 571.279 83.0834 571.07 81.413C570.931 79.7426 570.862 78.4898 570.862 77.6546C570.862 76.7498 570.862 75.2186 570.862 73.061C570.862 72.1562 570.862 71.495 570.862 71.0774V45.395H561.883V36.7298H570.862V20.5478H582.763V36.7298H593.621Z"
+												fill="white" />
+											<path d="M108.267 0H85.0667L96.6666 11.6L108.267 0Z"
+												fill="url(#paint0_linear_529_371)" />
+											<rect x="85.0667" y="11.6002" width="30.9333" height="19.3333"
+												fill="#070707" />
+											<path
+												d="M108.267 19.3331V88.9331H85.0667V41.8507C85.0667 30.3872 100.533 22.0625 108.267 19.3331Z"
+												fill="white" />
+										</g>
+										<defs>
+											<linearGradient id="paint0_linear_529_371" x1="102.306" y1="-1.15937e-06"
+												x2="109.73" y2="0.952619" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FFA500" />
+												<stop offset="1" stop-color="#F8BC36" />
+											</linearGradient>
+										</defs>
+									</svg>
+								</div>
+								<div class="brends__img-bottom">
+									<img src="./images/main_img/brends_img/brends_img_image.png" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="maintenance">
+				<div class="container">
+					<h2 class="maintenance__title">
+						Техника, которую мы обслуживаем:
+					</h2>
+					<div class="maintenance__grid-container">
+						<div class="maintenance__grid">
+							<div class="maintenance__item item-1">
+								<h3 class="maintenance__item-title">
+									Легковые автомобили
+								</h3>
+								<img src="./images/main_img/maintenance_img/maintenance_img_light_car.png"
+									alt="Автомобиль" class="maintenance__item-img" />
+							</div>
+							<div class="maintenance__item item-2">
+								<h3 class="maintenance__item-title">Грузовики</h3>
+								<img width="302" height="302"
+									src="./images/main_img/maintenance_img/maintenance_img_tractor-trailer.png"
+									alt="Автомобиль" class="maintenance__item-img" />
+							</div>
+							<div class="maintenance__item item-3">
+								<h3 class="maintenance__item-title">
+									Легкие комерческие
+								</h3>
+								<img width="302" height="302"
+									src="./images/main_img/maintenance_img/maintenance_img_microbus.png"
+									alt="Автомобиль" class="maintenance__item-img" />
+							</div>
+							<div class="maintenance__item item-4">
+								<h3 class="maintenance__item-title">Спецтехника</h3>
+								<img width="302" height="302"
+									src="./images/main_img/maintenance_img/maintenance_img_weigth_car.png"
+									alt="Автомобиль" class="maintenance__item-img" />
+							</div>
+							<div class="maintenance__item item-5">
+								<h3 class="maintenance__item-title">
+									Дизельные генераторы
+								</h3>
+								<img width="302" height="302"
+									src="./images/main_img/maintenance_img/maintenance_img_power-generator.png"
+									alt="Автомобиль" class="maintenance__item-img" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="services">
+				<div class="container">
+					<h2 class="services__title">Услуги нашего сервиса:</h2>
+					<div class="services__accordion">
+						<div class="services__accordion__inner">
+							<h3 class="services__accordion__title">
+								Техническое обслуживание
+							</h3>
+							<div class="services__accordion__content">
+								<div class="services__accordion__item">
+									<h4 class="services__accordion__item-title">
+										Замена масла в двигателе
+									</h4>
+									<img src="./images/main_img/services_img/services_img_tex_servis-1.png"
+										alt="Services-img" class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href=""
+											class="services__accordion__item-link-bottom open-popup">Записаться</a>
+									</div>
+								</div>
+								<div class="services__accordion__item">
+									<h4 class="services__accordion__item-title">
+										Замена воздушного фильтра
+									</h4>
+									<img src="./images/main_img/services_img/services_img_tex_servis-2.png"
+										alt="Services-img" class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href=""
+											class="services__accordion__item-link-bottom open-popup">Записаться</a>
+									</div>
+								</div>
+								<div class="services__accordion__item">
+									<h4 class="services__accordion__item-title">
+										Замена топливного фильтра
+									</h4>
+									<img src="./images/main_img/services_img/services_img_tex_servis-3.png"
+										alt="Services-img" class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href=""
+											class="services__accordion__item-link-bottom open-popup">Записаться</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="services__accordion__inner">
+							<h3 class="services__accordion__title">
+								Ремонт форсунок
+							</h3>
+							<div class="services__accordion__content">
+								<div class="services__accordion__item">
+									<h4 class="services__accordion__item-title">
+										Common Rail
+									</h4>
+									<img src="./images/main_img/services_img/services_img_injectors-1.png"
+										alt="Services-img" class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href="" class="services__accordion__item-link-bottom">Записаться</a>
+									</div>
+								</div>
+								<div class="services__accordion__item">
+									<h4 class="services__accordion__item-title">
+										Насос форсунки
+									</h4>
+									<img src="./images/main_img/services_img/services_img_injectors-2.png"
+										alt="Services-img" class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href="" class="services__accordion__item-link-bottom">Записаться</a>
+									</div>
+								</div>
+								<div class="services__accordion__item">
+									<h4 class="services__accordion__item-title">
+										Пьезо форсунки
+									</h4>
+									<img src="./images/main_img/services_img/services_img_injectors-3.png"
+										alt="Services-img" class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href="" class="services__accordion__item-link-bottom">Записаться</a>
+									</div>
+								</div>
+								<div class="services__accordion__item">
+									<h4 class="services__accordion__item-title">
+										PLD Секции
+									</h4>
+									<img src="./images/main_img/services_img/services_img_injectors-4.png"
+										alt="Services-img" class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href="" class="services__accordion__item-link-bottom">Записаться</a>
+									</div>
+								</div>
+								<div class="services__accordion__item">
+									<h4 class="services__accordion__item-title">
+										Механические
+									</h4>
+									<img src="./images/main_img/services_img/services_img_injectors-5.png"
+										alt="Services-img" class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href="" class="services__accordion__item-link-bottom">Записаться</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="services__accordion__inner">
+							<h3 class="services__accordion__title">Ремонт ТНВД</h3>
+							<div class="services__accordion__content">
+								<div class="services__accordion__item">
+									<h4 class="services__accordion__item-title">
+										ТНВД (диагностика)
+									</h4>
+									<img src="./images/main_img/services_img/services_img_tnvd-1.png" alt="Services-img"
+										class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href="" class="services__accordion__item-link-bottom">Записаться</a>
+									</div>
+								</div>
+								<div class="services__accordion__item">
+									<h4 class="services__accordion__item-title">
+										ТНВД (ремонт)
+									</h4>
+									<img src="./images/main_img/services_img/services_img_tnvd-2.png" alt="Services-img"
+										class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href="" class="services__accordion__item-link-bottom">Записаться</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="services__accordion__inner">
+							<h3 class="services__accordion__title">
+								Ремонт турбин
+							</h3>
+							<div class="services__accordion__content">
+								<div class="services__accordion__item">
+									<h4 class="services__accordion__item-title">
+										Турбина (ремонт)
+									</h4>
+									<img src="./images/main_img/services_img/services_img_turbo-1.png"
+										alt="Services-img" class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href="" class="services__accordion__item-link-bottom">Записаться</a>
+									</div>
+								</div>
+								<div class="services__accordion__item">
+									<h4 class="services__accordion__item-title">
+										Турбина (диагностика)
+									</h4>
+									<img src="./images/main_img/services_img/services_img_turbo-2.png"
+										alt="Services-img" class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href="" class="services__accordion__item-link-bottom">Записаться</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="services__accordion__inner">
+							<h3 class="services__accordion__title">Диагностика</h3>
+							<div class="services__accordion__content">
+								<div class="services__accordion__item">
+									<h4 class="services__accordion__item-title">
+										Контрольный <br />
+										осмотр
+									</h4>
+									<img src="./images/main_img/services_img/services_img_diagnostic-1.png"
+										alt="Services-img" class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href="" class="services__accordion__item-link-bottom">Записаться</a>
+									</div>
+								</div>
+								<div class="services__accordion__item">
+									<h4 class="services__accordion__item-title">
+										Компьютерная диагностика автомобиля
+									</h4>
+									<img src="./images/main_img/services_img/services_img_diagnostic-2.png"
+										alt="Services-img" class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href="" class="services__accordion__item-link-bottom">Записаться</a>
+									</div>
+								</div>
+								<div class="services__accordion__item">
+									<h4 class="services__accordion__item-title">
+										Диагностика Check Engine
+									</h4>
+									<img src="./images/main_img/services_img/services_img_diagnostic-3.png"
+										alt="Services-img" class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href="" class="services__accordion__item-link-bottom">Записаться</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="services__accordion__inner accordion-6">
+							<h3 class="services__accordion__title">
+								Диагностика авто
+							</h3>
+							<div class="services__accordion__content accordion-6-content">
+								<div class="services__accordion__item accordion-6-item-1">
+									<h4 class="services__accordion__item-title">
+										Диагностика BMW
+									</h4>
+									<img src="./images/main_img/services_img/services_img_bmw.png" alt="Services-img"
+										class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href="" class="services__accordion__item-link-bottom">Записаться</a>
+									</div>
+								</div>
+								<div class="services__accordion__item accordion-6-item-2">
+									<h4 class="services__accordion__item-title">
+										Диагностика Mercedes
+									</h4>
+									<img src="./images/main_img/services_img/services_img_mercedes.png"
+										alt="Services-img" class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href="" class="services__accordion__item-link-bottom">Записаться</a>
+									</div>
+								</div>
+								<div class="services__accordion__item accordion-6-item-3">
+									<h4 class="services__accordion__item-title">
+										Диагностика Audi
+									</h4>
+									<img src="./images/main_img/services_img/services_img_audi.png" alt="Services-img"
+										class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href="" class="services__accordion__item-link-bottom">Записаться</a>
+									</div>
+								</div>
+								<div class="services__accordion__item accordion-6-item-4">
+									<h4 class="services__accordion__item-title">
+										Диагностика BENTLEY
+									</h4>
+									<img src="./images/main_img/services_img/services_img_bentley.png"
+										alt="Services-img" class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href="" class="services__accordion__item-link-bottom">Записаться</a>
+									</div>
+								</div>
+								<div class="services__accordion__item accordion-6-item-5">
+									<h4 class="services__accordion__item-title">
+										Диагностика Chrysler
+									</h4>
+									<img src="./images/main_img/services_img/services_img_chrysler.png"
+										alt="Services-img" class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href="" class="services__accordion__item-link-bottom">Записаться</a>
+									</div>
+								</div>
+								<div class="services__accordion__item accordion-6-item-6">
+									<h4 class="services__accordion__item-title">
+										Диагностика Dacia
+									</h4>
+									<img src="./images/main_img/services_img/services_img_dacia.png" alt="Services-img"
+										class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href="" class="services__accordion__item-link-bottom">Записаться</a>
+									</div>
+								</div>
+								<div class="services__accordion__item accordion-6-item-7">
+									<h4 class="services__accordion__item-title">
+										Диагностика Fiat
+									</h4>
+									<img src="./images/main_img/services_img/services_img_fiat.png" alt="Services-img"
+										class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href="" class="services__accordion__item-link-bottom">Записаться</a>
+									</div>
+								</div>
+								<div class="services__accordion__item accordion-6-item-8">
+									<h4 class="services__accordion__item-title">
+										Диагностика Ford
+									</h4>
+									<img src="./images/main_img/services_img/services_img_ford.png" alt="Services-img"
+										class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href="" class="services__accordion__item-link-bottom">Записаться</a>
+									</div>
+								</div>
+								<div class="services__accordion__item accordion-6-item-9">
+									<h4 class="services__accordion__item-title">
+										Диагностика Hyundai
+									</h4>
+									<img src="./images/main_img/services_img/services_img_hyndai.png" alt="Services-img"
+										class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href="" class="services__accordion__item-link-bottom">Записаться</a>
+									</div>
+								</div>
+								<div class="services__accordion__item accordion-6-item-10">
+									<h4 class="services__accordion__item-title">
+										Диагностика Infinity
+									</h4>
+									<img src="./images/main_img/services_img/services_img_infinity.png"
+										alt="Services-img" class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href="" class="services__accordion__item-link-bottom">Записаться</a>
+									</div>
+								</div>
+								<div class="services__accordion__item accordion-6-item-11">
+									<h4 class="services__accordion__item-title">
+										Диагностика Isuzu
+									</h4>
+									<img src="./images/main_img/services_img/services_img_isuzu.png" alt="Services-img"
+										class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href="" class="services__accordion__item-link-bottom">Записаться</a>
+									</div>
+								</div>
+								<div class="services__accordion__item accordion-6-item-12">
+									<h4 class="services__accordion__item-title">
+										Диагностика Kia
+									</h4>
+									<img src="./images/main_img/services_img/services_img_kia.png" alt="Services-img"
+										class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href="" class="services__accordion__item-link-bottom">Записаться</a>
+									</div>
+								</div>
+								<div class="services__accordion__item accordion-6-item-13">
+									<h4 class="services__accordion__item-title">
+										Диагностика Land Rover
+									</h4>
+									<img src="./images/main_img/services_img/services_img_land-rover.png"
+										alt="Services-img" class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href="" class="services__accordion__item-link-bottom">Записаться</a>
+									</div>
+								</div>
+								<div class="services__accordion__item accordion-6-item-14">
+									<h4 class="services__accordion__item-title">
+										Диагностика SsangYong
+									</h4>
+									<img src="./images/main_img/services_img/services_img_ssang-young.png"
+										alt="Services-img" class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href="" class="services__accordion__item-link-bottom">Записаться</a>
+									</div>
+								</div>
+								<div class="services__accordion__item accordion-6-item-15">
+									<h4 class="services__accordion__item-title">
+										Диагностика Toyota
+									</h4>
+									<img src="./images/main_img/services_img/services_img_toyota.png" alt="Services-img"
+										class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href="" class="services__accordion__item-link-bottom">Записаться</a>
+									</div>
+								</div>
+								<div class="services__accordion__item accordion-6-item-16">
+									<h4 class="services__accordion__item-title">
+										Диагностика Volkswagen
+									</h4>
+									<img src="./images/main_img/services_img/services_img_volkswagen.png"
+										alt="Services-img" class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href="" class="services__accordion__item-link-bottom">Записаться</a>
+									</div>
+								</div>
+								<div class="services__accordion__item accordion-6-item-17">
+									<h4 class="services__accordion__item-title">
+										Диагностика Volvo
+									</h4>
+									<img src="./images/main_img/services_img/services_img_volvo.png" alt="Services-img"
+										class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href="" class="services__accordion__item-link-bottom">Записаться</a>
+									</div>
+								</div>
+								<div class="services__accordion__item accordion-6-item-18">
+									<h4 class="services__accordion__item-title">
+										Диагностика Газель
+									</h4>
+									<img src="./images/main_img/services_img/services_img_gaz.png" alt="Services-img"
+										class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href="" class="services__accordion__item-link-bottom">Записаться</a>
+									</div>
+								</div>
+								<div class="services__accordion__item accordion-6-item-19">
+									<h4 class="services__accordion__item-title">
+										Диагностика GW
+									</h4>
+									<img src="./images/main_img/services_img/services_img_great-wall.png"
+										alt="Services-img" class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href="" class="services__accordion__item-link-bottom">Записаться</a>
+									</div>
+								</div>
+								<div class="services__accordion__item accordion-6-item-20">
+									<h4 class="services__accordion__item-title">
+										Диагностика Lexus
+									</h4>
+									<img src="./images/main_img/services_img/services_img_lexus.png" alt="Services-img"
+										class="services__accordion__item-img" />
+									<div class="services__accordion__item-buttons">
+										<a href="" class="services__accordion__item-link-top">Подробнее</a>
+										<a href="" class="services__accordion__item-link-bottom">Записаться</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="shop">
+				<div class="container">
+					<div class="shop__inner">
+						<div class="shop__item-left">
+							<h2 class="shop__item-title">
+								Теперь заказ нужных деталей стал ещё проще!
+							</h2>
+							<p class="shop__item-descr">
+								Посетите наш интернет-магазин и подберите необходимые
+								детали. Текст необходимо будет подредактировать.
+								Скорее всего лучше кратко написать, что можно купить
+							</p>
+							<a href="#" class="shop__item-button button">Перейти в магазин</a>
+						</div>
+						<div class="shop__item-right">
+							<div class="shop__item-image">
+								<img src="./images/main_img/shop_img/shop_img-bg.png" alt="Магазин"
+									class="shop__item-img" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="question">
+				<div class="container">
+					<div class="question__accordion">
+						<h4 class="question__title">Часто спрашивают</h4>
+						<h2 class="question__subtitle">
+							Часто задаваемые вопросы
+						</h2>
+						<div class="question__accordion__inner">
+							<div class="question__accordion__item">
+								<h3 class="question__accordion__item-title">
+									Несёте ли вы какие-нибудь гарантийные
+									обязательства?
+								</h3>
+								<p class="question__accordion__item-descr">
+									Сложно сказать, почему представители современных
+									социальных резервов, превозмогая сложившуюся
+									непростую экономическую ситуацию, описаны
+									максимально подробно. Принимая во внимание
+									показатели успешности, повышение уровня
+									гражданского сознания является качественно новой
+									ступенью новых предложений. Банальные, но
+									неопровержимые выводы, а также сделанные на базе
+									интернет-аналитики выводы, инициированные
+									исключительно синтетически, ограничены
+									исключительно образом мышления.
+								</p>
+							</div>
+							<div class="question__accordion__item">
+								<h3 class="question__accordion__item-title">
+									В какое время вы работаете?
+								</h3>
+								<p class="question__accordion__item-descr">
+									Сложно сказать, почему представители современных
+									социальных резервов, превозмогая сложившуюся
+									непростую экономическую ситуацию, описаны
+									максимально подробно. Принимая во внимание
+									показатели успешности, повышение уровня
+									гражданского сознания является качественно новой
+									ступенью новых предложений. Банальные, но
+									неопровержимые выводы, а также сделанные на базе
+									интернет-аналитики выводы, инициированные
+									исключительно синтетически, ограничены
+									исключительно образом мышления.
+								</p>
+							</div>
+							<div class="question__accordion__item">
+								<h3 class="question__accordion__item-title">
+									Какой-либо вопрос?
+								</h3>
+								<p class="question__accordion__item-descr">
+									Сложно сказать, почему представители современных
+									социальных резервов, превозмогая сложившуюся
+									непростую экономическую ситуацию, описаны
+									максимально подробно. Принимая во внимание
+									показатели успешности, повышение уровня
+									гражданского сознания является качественно новой
+									ступенью новых предложений. Банальные, но
+									неопровержимые выводы, а также сделанные на базе
+									интернет-аналитики выводы, инициированные
+									исключительно синтетически, ограничены
+									исключительно образом мышления.
+								</p>
+							</div>
+							<div class="question__accordion__item">
+								<h3 class="question__accordion__item-title">
+									И здесь еще один какой-либо вопрос?
+								</h3>
+								<p class="question__accordion__item-descr">
+									Сложно сказать, почему представители современных
+									социальных резервов, превозмогая сложившуюся
+									непростую экономическую ситуацию, описаны
+									максимально подробно. Принимая во внимание
+									показатели успешности, повышение уровня
+									гражданского сознания является качественно новой
+									ступенью новых предложений. Банальные, но
+									неопровержимые выводы, а также сделанные на базе
+									интернет-аналитики выводы, инициированные
+									исключительно синтетически, ограничены
+									исключительно образом мышления.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="question-forms">
+				<div class="container">
+					<div class="question-forms-block">
+						<div class="question-forms-left">
+							<div class="question-contact-form">
+								<h2 class="question-contact-form-title">
+									Не нашли ответ на свой вопрос?
+								</h2>
+								<p class="question-contact-descr">
+									Напишите свой вопрос и оставьте свои контактные
+									данные, и наш менеджер свяжется с Вами в течение
+									15 минут
+								</p>
+								<form action="#" method="post">
+									<div class="form-group question__form-group">
+										<input type="text" id="name" name="name" placeholder="Ваше имя" required />
+									</div>
+									<div class="form-group question__form-group">
+										<select id="contact-method" name="contact_method" required>
+											<option value="" disabled selected>
+												Выберите способ связи
+											</option>
+											<option value="phone">Телефон</option>
+											<option value="email">Email</option>
+											<option value="social">
+												Социальные сети
+											</option>
+										</select>
+									</div>
+									<div class="form-group question__form-group">
+										<input type="text" id="contact-info" name="contact_info"
+											placeholder="Ваш телефон / Ваш никнейм" required />
+									</div>
+									<div class="form-group question__form-group">
+										<textarea id="question" name="question" placeholder="Ваш вопрос" rows="4"
+											required></textarea>
+									</div>
+									<div class="form-group agreement">
+										<input type="checkbox" id="agreement" name="agreement" required />
+										<label for="agreement">
+											Нажимая на кнопку "Отправить запрос", вы
+											даёте согласие на передачу и обработку
+											персональных данных и соглашаетесь с
+											<a href="#" target="_blank">Политикой конфиденциальности</a>.
+										</label>
+									</div>
+									<button type="submit" class="btn-submit">
+										Задать вопрос
+									</button>
+								</form>
+								<div class="contact-options">
+									<p>или напишите нам напрямую</p>
+									<div class="social-icons">
+										<!-- Здесь могут быть иконки социальных сетей -->
+										<a href="#" class="social-icon email">
+											<img src="./images/header_img/header_social_icon_mail.svg" alt="" />
+										</a>
+										<a href="#" class="social-icon whatsapp">
+											<img src="./images/header_img/header_social_icon_whatsapp.svg" alt="" />
+										</a>
+										<a href="#" class="social-icon vk">
+											<img src="./images/header_img/header_social_icon_vk.svg" alt="" />
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="question-forms-right">
+							<div class="question-forms-right__image">
+								<img class="question-forms-right__img"
+									src="./images/main_img/question-forms-img/question-forms-img_bg.png" alt="Мастер" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__logo">
+					<img src="./images/header_img/header_logo.svg" alt="Logotype" class="footer__logo-img" />
+				</div>
+				<div class="footer__block">
+					<div class="footer__block-left">
+						<div class="footer__contact">
+							<p class="footer__info">
+								Санкт-Петербург, Мебельный проезд д.2 (станции метро
+								<br />
+								Старая деревня, Комендантский проспект, Беговая)
+							</p>
+							<a href="tel:+78126057077" class="footer__mobile">
+								<img src="./images/header_img/header_social_icon_phone.svg" alt="Phone"
+									class="footer__mobile-icon" />
+								+7 (812) 604-70-77
+							</a>
+							<div class="footer__block-social">
+								<a href="mailto:info@dieselspot.ru" class="footer__mail">
+									<img src="./images/header_img/header_social_icon_mail.svg" alt="Mail"
+										class="footer__mail-icon" />
+									info@dieselspot.ru
+								</a>
+								<a href="https://wa.me/+79522883587" class="footer__whatsapp">
+									<img src="./images/header_img/header_social_icon_whatsapp.svg" alt="WhatsApp"
+										class="footer__whatsapp-icon" />
+									+7 (952) 288-35-87
+								</a>
+								<a href="https://vk.com/dieselspot" class="footer__vk">
+									<img src="./images/header_img/header_social_icon_vk.svg" alt="VK"
+										class="footer__vk-icon" />
+									vk.com/dieselspot
+								</a>
+								<a href="https://www.instagram.com/diesel_spot" class="footer__instagram">
+									<img src="./images/header_img/header_social_icon_instagram.svg" alt="Instagram"
+										class="footer__instagram-icon" />
+									instagram.com/diesel_spot
+								</a>
+								<a href="https://avito.ru/your-profile" class="footer__avito">
+									<img src="./images/header_img/header_social_icon_avito.svg" alt="Avito"
+										class="footer__avito-icon" />
+									DieselSpot (Авито)
+								</a>
+							</div>
+							<a href="" class="footer__button button">Обратный звонок</a>
+						</div>
+						<div class="footer__privacy">
+							<p class="footer__reserved">
+								© Diesel Spot | Все права защищены. 2022-2024
+							</p>
+							<a href="" class="footer__policy">Политика конфиденциальности</a>
+						</div>
+					</div>
+					<div class="footer__block-rigth">
+						<div class="footer__menu">
+							<ul class="footer__item">
+								<a href="#" class="footter__menu__link">Ремонт форсунок</a>
+								<li class="footer__list">
+									<a href="#" class="footer__link">Common Rail</a>
+								</li>
+								<li class="footer__list">
+									<a href="#" class="footer__link">Насос форсунки
+									</a>
+								</li>
+								<li class="footer__list">
+									<a href="#" class="footer__link">Пьезо форсунки
+									</a>
+								</li>
+								<li class="footer__list">
+									<a href="#" class="footer__link">PLD Секции</a>
+								</li>
+								<li class="footer__list">
+									<a href="#" class="footer__link">Механические</a>
+								</li>
+							</ul>
+							<ul class="footer__item">
+								<a href="#" class="footter__menu__link">Ремонт ТНВД</a>
+								<li class="footer__list">
+									<a href="#" class="footer__link">Пьезо форсунки</a>
+								</li>
+								<li class="footer__list">
+									<a href="#" class="footer__link">Common Rail</a>
+								</li>
+								<li class="footer__list">
+									<a href="#" class="footer__link">Насос форсунки</a>
+								</li>
+								<li class="footer__list">
+									<a href="#" class="footer__link">PLD Секции</a>
+								</li>
+							</ul>
+							<ul class="footer__item">
+								<a href="#" class="footter__menu__link">Диагностика</a>
+								<li class="footer__list">
+									<a href="#" class="footer__link">Форсунки</a>
+								</li>
+								<li class="footer__list">
+									<a href="#" class="footer__link">ТНВД</a>
+								</li>
+							</ul>
+							<ul class="footer__item">
+								<a href="#" class="footter__menu__link">Ремонт Турбин
+								</a>
+								<li class="footer__list">
+									<a href="#" class="footer__link">Common Rail</a>
+								</li>
+								<li class="footer__list">
+									<a href="#" class="footer__link">Насос форсунки</a>
+								</li>
+								<li class="footer__list">
+									<a href="#" class="footer__link">Пьезо форсунки</a>
+								</li>
+								<li class="footer__list">
+									<a href="#" class="footer__link">PLD Секции</a>
+								</li>
+								<li class="footer__list">
+									<a href="#" class="footer__link">Механические</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__map">
+							<iframe
+								src="https://yandex.ru/map-widget/v1/?um=constructor%3A2f25194f1690af96814425afc6f467c2f3779c3c8389fc1d0fd1843632ded180&amp;source=constructor"
+								frameborder="0">
+							</iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="popup-wrapper unique-popup-wrapper">
+			<div class="popup-overlay unique-popup-overlay">
+				<div class="popup unique-popup">
+					<button class="popup-close unique-popup-close">
+						&times;
+					</button>
+					<h2 class="popup-title unique-popup-title">
+						Запись на услугу
+					</h2>
+					<p class="popup-descr unique-popup-descr">
+						Оставьте свои контактные данные и выберите дату посещения,
+						и наш менеджер свяжется с Вами в течение 15 минут.
+					</p>
+					<form class="popup-form unique-popup-form">
+						<label class="unique-popup-label">
+							<input type="text" name="name" placeholder="Ваше имя" required class="unique-popup-input" />
+						</label>
+						<label class="unique-popup-label date-picker">
+							<span class="unique-popup-span">Выберите дату посещения</span>
+							<input type="date" name="date" required class="unique-popup-input" placeholder="" />
+						</label>
+						<label class="unique-popup-label">
+							<select name="contact_method" required class="unique-popup-select">
+								<option value="">Выберите способ связи</option>
+								<option value="phone">Телефон</option>
+								<option value="telegram">Telegram</option>
+								<option value="email">Email</option>
+							</select>
+						</label>
+						<label class="unique-popup-label">
+							<input type="text" name="contact_info" placeholder="Ваш телефон / Ваш никнейм" required
+								class="unique-popup-input" />
+						</label>
+						<div class="privacy-policy unique-privacy-policy">
+							<input type="checkbox" name="agreement" id="agreement" required
+								class="unique-popup-checkbox" />
+							<label for="agreement" class="agreement">
+								Нажимая на кнопку "Отправить запрос", вы даёте
+								согласие на передачу и обработку персональных данных
+								и соглашаетесь с
+								<a href="/policy" target="_blank" class="unique-popup-link">
+									Политикой конфиденциальности </a>.
+							</label>
+						</div>
+						<button type="submit" class="popup-submit unique-popup-submit">
+							Записаться
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="custom-overlay-wrapper">
+			<div class="custom-popup-callback">
+				<div class="custom-popup-header">
+					<h2>Обратный звонок</h2>
+					<button class="custom-popup-close" aria-label="Закрыть">&times;</button>
+				</div>
+				<div class="custom-popup-content">
+					<p>Оставьте свои контактные данные, и наш менеджер свяжется с Вами в течение 15 минут</p>
+					<form class="custom-callback-form">
+						<div class="custom-form-group">
+							<input type="text" id="custom-name" name="name" placeholder="Ваше имя" required>
+						</div>
+						<div class="custom-form-group">
+							<input type="tel" id="custom-phone" name="phone" placeholder="Ваш телефон" required>
+						</div>
+						<button type="submit" class="custom-btn-submit">Отправить</button>
+						<div class="privacy-policy unique-privacy-policy">
+							<input type="checkbox" name="agreement" id="agreement" required
+								class="unique-popup-checkbox" />
+							<label for="agreement" class="agreement">
+								Нажимая на кнопку "Отправить запрос", вы даёте
+								согласие на передачу и обработку персональных данных
+								и соглашаетесь с
+								<a href="/policy" target="_blank" class="unique-popup-link">
+									Политикой конфиденциальности </a>.
+							</label>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script src="./js/main.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="./js/slider_brends.js"></script>
+	</div>
+</body>
+
+</html>
